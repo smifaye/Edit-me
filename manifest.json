@@ -23,6 +23,6 @@
     "http://*/*",
     "https://*/*"
   ],
-  "version": "1",
+  "version": "0.4",
   "manifest_version": 3
 }
