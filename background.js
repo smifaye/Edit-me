@@ -1,24 +1,29 @@
-const contentful = ["https://www.citizensadvice.org.uk/family/*","https://www.citizensadvice.org.uk/immigration/*"];
+async function getCurrentTab() {
+  let queryOptions = {
+    active: true,
+    currentWindow: true
+  };
+  let [tab] = await chrome.tabs.query(queryOptions);
+  return tab;
+}
 
-chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-  if (changeInfo.status == 'complete' && contentful.some(url => tab.url.includes(url))) {
-    chrome.action.onClicked.addListener(function(tab) {
-      chrome.scripting.executeScript({
-        target: {
-          tabId: tab.id
-        },
-        files: ["bookmarklet.js"]
-      })
-    });
-  }
-  else {
-    chrome.action.onClicked.addListener(function(tab) {
-      chrome.scripting.executeScript({
-        target: {
-          tabId: tab.id
-        },
-        files: ["bookmarklet.js"]
-      })
-    });
-  }
-});
+if (tab == ["https://www.citizensadvice.org.uk/family/*", "https://www.citizensadvice.org.uk/immigration/*"]) {
+  chrome.action.onClicked.addListener(function(tab) {
+    chrome.scripting.executeScript({
+      target: {
+        tabID: tab.id
+      },
+      files: ['bookmarklet.js']
+    })
+  });
+}
+else {
+  chrome.action.onClicked.addListener(function(tab) {
+    chrome.scripting.executeScript({
+      target: {
+        tabID: tab.id
+      },
+      files: ['epi-bookmarklet.js']
+    })
+  });
+}
