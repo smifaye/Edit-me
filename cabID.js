@@ -9,4 +9,4 @@ function getCabID() {
   }
   return "";
 }
-alert("The cab-id for this page is " + getCabID())
+alert("The id for this page is " + getCabID())
