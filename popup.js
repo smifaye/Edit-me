@@ -1,7 +1,9 @@
+//set some things here based on their id in the HTML file
 let contentful = document.getElementById("contentful");
 let episerver = document.getElementById("episerver");
 let cabID = document.getElementById("cabID");
 
+//run the async function to get the active tab
 async function getCurrentTab() {
   let queryOptions = {
     active: true,
@@ -11,6 +13,7 @@ async function getCurrentTab() {
   return tab;
 }
 
+//listen for clicks and then run a script
 contentful.addEventListener("click", async () => {
   let tab = await getCurrentTab();
 
@@ -22,6 +25,7 @@ contentful.addEventListener("click", async () => {
   });
 });
 
+//listen for clicks and then run a script
 episerver.addEventListener("click", async () => {
   let tab = await getCurrentTab();
 
@@ -33,6 +37,7 @@ episerver.addEventListener("click", async () => {
   });
 });
 
+//listen for clicks and then run a script
 cabID.addEventListener("click", async () => {
   let tab = await getCurrentTab();
 
