@@ -6,10 +6,11 @@
   },
   "action": {
     "default_icon": "icon-128.png",
-    "default_title": "Edit me"
+    "default_title": "Edit me",
+    "default_popup": "popup.html"
   },
   "name": "Edit me",
-  "description": "Take any page from Citizens Advice, AdviserNet, CABlink or BMIS and put it in edit mode",
+  "description": "Edit content on the Citizens Advice website and show the cabID field",
   "icons": {
     "16": "icon-16.png",
     "48": "icon-48.png",
