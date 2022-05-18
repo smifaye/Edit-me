@@ -1,14 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-html,
-body,
-main {
-  margin: 0;
-  padding: 0.5rem;
+body {
+  width: 12rem;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
 }
 
-body {
-  font-weight: 700;
-  font-size: 1.125rem;
-  font-family: 'Open Sans', sans-serif;
+ul {
+  list-style: none;
+  padding: 0.75rem;
+}
+
+a {
+  color: #004b88;
+  text-decoration: underline;
+  outline: none;
+}
+
+a:hover {
+  color: #012760;
+  background-color: #f2f8ff;
+  cursor: pointer;
+}
+
+a:focus {
+  color: #161616;
+  background-color: #ffd250;
+  text-decoration: none;
+  border-bottom: 2px solid #161616;
 }
