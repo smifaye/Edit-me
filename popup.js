@@ -2,6 +2,7 @@
 let contentful = document.getElementById("contentful");
 let episerver = document.getElementById("episerver");
 let cabID = document.getElementById("cabID");
+let guid = document.getElementById("guid");
 let view = document.getElementById("view");
 
 //run the async function to get the active tab
@@ -47,6 +48,17 @@ cabID.addEventListener("click", async () => {
       tabId: tab.id
     },
     files: ["cabID.js"]
+  });
+});
+
+guid.addEventListener("click", async () => {
+  let tab = await getCurrentTab();
+
+  chrome.scripting.executeScript({
+    target: {
+      tabId: tab.id
+    },
+    files: ["guid.js"]
   });
 });
 
