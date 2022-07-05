@@ -9,4 +9,4 @@ function getGUID() {
   }
   return "";
 }
-alert("The GUID for this page is " + getGUID())
+alert("The tracking GUID for this page is " + getGUID())
