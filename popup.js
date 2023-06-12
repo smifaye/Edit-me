@@ -75,7 +75,7 @@ view.addEventListener("click", async () => {
 });
 
 login.addEventListener("click", async () => {
-  let tab = await login();
+  let tab = await getCurrentTab();
   
   chrome.scripting.executeScript({
     target: {
