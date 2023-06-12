@@ -75,7 +75,12 @@ view.addEventListener("click", async () => {
 });
 
 login.addEventListener("click", async () => {
-  chrome.tabs.update(
-    url: "https://epi.citizensadvice.org.uk",
-  )
+  let tab = await getCurrentTab();
+
+  chrome.scripting.executeScript({
+    target: {
+      tabId: tab.id
+    },
+    url: "https://epi.citizensadvice.org.uk"
+  });
 });
