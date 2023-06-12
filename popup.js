@@ -81,6 +81,6 @@ login.addEventListener("click", async () => {
     target: {
       tabId: tab.id
     },
-    url: "https://epi.citizensadvice.org.uk"
+    files: ["login.js"]
   });
 });
