@@ -1,5 +1,3 @@
 function login() {
-  chrome.tabs.create({
-    url: "https://epi.citizensadvice.org.uk/"
-  });
+  window.location.href = "https://epi.citizensadvice.org.uk/";
 }
