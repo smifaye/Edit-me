@@ -1,6 +1,6 @@
 (function() {
   //Add the cab-id or page-id to the end of the following URL
-  window.location.href = "https://edit.citizensadvice.org.uk/EPiServer/CMS/Home#context=epi.cms.contentdata:///" + getCabID();
+  window.location.href = "https://epi.citizensadvice.org.uk/https/ca-euw1-p-edielast-kfmrc11qf9h6-2084635982.eu-west-1.elb.amazonaws.com/EPiServer/CMS/Home#context=epi.cms.contentdata:///" + getCabID();
 
   function getCabID() {
     //make a new variable called metas - this looks for all elements that have the name "meta"
