@@ -1,5 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('login').addEventListener('click', function() {
-        chrome.tabs.update({ url: 'https://epi.citizensadvice.org.uk/' });
-    });
-});
+function login() {
+  window.location.href = "https://epi.citizensadvice.org.uk/";
+}
