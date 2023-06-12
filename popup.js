@@ -75,7 +75,6 @@ view.addEventListener("click", async () => {
 });
 
 login.addEventListener("click", async () => {
-  
   chrome.tabs.update(
     url: "https://epi.citizensadvice.org.uk",
   )
