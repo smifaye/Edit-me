@@ -72,3 +72,14 @@ view.addEventListener("click", async () => {
     files: ["getURL.js"]
   });
 });
+
+login.addEventListener("click", async () => {
+  let tab = await login();
+  
+  chrome.scripting.executeScript({
+    target: {
+      tabId: tab.id
+    },
+    files: ["login.js"]
+  });
+});
