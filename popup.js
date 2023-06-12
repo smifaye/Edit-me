@@ -4,6 +4,7 @@ let episerver = document.getElementById("episerver");
 let cabID = document.getElementById("cabID");
 let guid = document.getElementById("guid");
 let view = document.getElementById("view");
+let login = document.getElementById("login");
 
 //run the async function to get the active tab
 async function getCurrentTab() {
