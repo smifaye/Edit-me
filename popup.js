@@ -4,7 +4,7 @@ let episerver = document.getElementById("episerver");
 let cabID = document.getElementById("cabID");
 let guid = document.getElementById("guid");
 let view = document.getElementById("view");
-let login = document.getElementById("login");
+//let login = document.getElementById("login");
 
 //run the async function to get the active tab
 async function getCurrentTab() {
@@ -73,7 +73,7 @@ view.addEventListener("click", async () => {
     files: ["getURL.js"]
   });
 });
-
+/* This code below works, but I can't make login.js work
 login.addEventListener("click", async () => {
   let tab = await getCurrentTab();
 
@@ -84,3 +84,4 @@ login.addEventListener("click", async () => {
     files: ["login.js"]
   });
 });
+*/
