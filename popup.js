@@ -61,16 +61,3 @@ guid.addEventListener("click", async () => {
     files: ["guid.js"]
   });
 });
-
-/* This doesn't work with the new content model so I've removed it
-view.addEventListener("click", async () => {
-  let tab = await getCurrentTab();
-
-  chrome.scripting.executeScript({
-    target: {
-      tabId: tab.id
-    },
-    files: ["getURL.js"]
-  });
-});
-*/
