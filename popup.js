@@ -3,8 +3,7 @@ let contentful = document.getElementById("contentful");
 let episerver = document.getElementById("episerver");
 let cabID = document.getElementById("cabID");
 let guid = document.getElementById("guid");
-let view = document.getElementById("view");
-//let login = document.getElementById("login");
+//let view = document.getElementById("view");
 
 //run the async function to get the active tab
 async function getCurrentTab() {
@@ -63,6 +62,7 @@ guid.addEventListener("click", async () => {
   });
 });
 
+/* This doesn't work with the new content model so I've removed it
 view.addEventListener("click", async () => {
   let tab = await getCurrentTab();
 
@@ -71,17 +71,6 @@ view.addEventListener("click", async () => {
       tabId: tab.id
     },
     files: ["getURL.js"]
-  });
-});
-/* This code below works, but I can't make login.js work
-login.addEventListener("click", async () => {
-  let tab = await getCurrentTab();
-
-  chrome.scripting.executeScript({
-    target: {
-      tabId: tab.id
-    },
-    files: ["login.js"]
   });
 });
 */
