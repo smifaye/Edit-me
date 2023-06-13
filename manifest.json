@@ -10,7 +10,7 @@
     "default_popup": "popup.html"
   },
   "name": "Edit me",
-  "description": "Edit content on the Citizens Advice website and show the cabID field",
+  "description": "Edit content on the Citizens Advice website",
   "icons": {
     "16": "icon-16.png",
     "48": "icon-48.png",
@@ -24,6 +24,6 @@
     "http://*/*",
     "https://*/*"
   ],
-  "version": "0.9.1",
+  "version": "0.9.2",
   "manifest_version": 3
 }
