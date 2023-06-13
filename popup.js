@@ -3,7 +3,6 @@ let contentful = document.getElementById("contentful");
 let episerver = document.getElementById("episerver");
 let cabID = document.getElementById("cabID");
 let guid = document.getElementById("guid");
-//let view = document.getElementById("view");
 
 //run the async function to get the active tab
 async function getCurrentTab() {
